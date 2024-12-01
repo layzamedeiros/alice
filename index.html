@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo" class="logo-image">
+    </div>
+  </header>
+  <section id="home" class="page active">
+    <img src="img/banner.png" alt="Banner" class="banner">
+    <div class="content">
+      <h1>Prepare-se para uma noite incrível!</h1>
+      <p class="description">
+        Temos o prazer de convidar você para celebrar o primeiro aniversário de Alice, um momento único e especial.
+        Neste espaço, você encontrará todos os detalhes da comemoração. Contamos com sua presença!
+      </p>
+    </div>
+    <div class="carrossel" id="carrossel">
+      <div class="fotos">
+        <img src="img/alice-01.png" alt="Imagem 1" class="foto">
+        <img src="img/alice-02.png" alt="Imagem 2" class="foto">
+        <img src="img/alice-03.png" alt="Imagem 3" class="foto">
+  </div>
+    <div class="location-info">
+      <h2>Detalhes do Local</h2>
+      <p>Gilmar Buffet, Av. Alberto Maranhão, 94 - Alto da Conceição, Mossoró - RN, às 18h.</p>
+    </div>
+    <button class="btn" onclick="goToPage('confirm')">Confirmar Presença</button>
+  </section>
+
+  <section id="confirm" class="page hidden">
+    <img src="img/banner.png" alt="Banner" class="banner">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfKOvoldv87-HQoYUdfNTttmVUwL8cGEFYVet-QhyC08MUdvA/viewform?embedded=true"
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    <button class="btn" onclick="goToPage('about')">Sobre o Local</button>
+  </section>
+
+  <section id="about" class="page hidden">
+    <img src="img/banner.png" alt="Banner" class="banner">
+    <div class="content">
+      <h2>Sobre o Local</h2>
+      <p>Nossa festa será no incrível Gilmar Buffet, localizado na Av. Alberto Maranhão, 94 - Alto da Conceição, Mossoró
+        - RN, a partir das 18h.</p>
+      <h3>Como Chegar</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.789142335743!2d-37.34015708472336!3d-5.196186796236627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b256b9e1cb2d55%3A0x9f2e2cf542a4f2e6!2sAv.%20Alberto%20Maranh%C3%A3o%2C%2094%20-%20Alto%20da%20Concei%C3%A7%C3%A3o%2C%20Mossor%C3%B3%20-%20RN!5e0!3m2!1spt-BR!2sbr!4v1699287045662!5m2!1spt-BR!2sbr"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <button class="btn" onclick="goToPage('gifts')">Sugestões de Presentes</button>
+  </section>
+
+  <section id="gifts" class="page hidden">
+    <img src="img/banner.png" alt="Banner" class="banner">
+    <div class="content_sugestoes">
+      <h2>Sugestões de Presentes</h2>
+      <p>Preparamos uma lista de sugestões de presentes pensando em facilitar para quem deseja presentear. Ressaltamos
+        que são apenas sugestões, ficando à livre escolha do convidado.</p>
+      <div class="sugestoes">
+        <ul>
+          <li>
+            <img src="img/icon-brinquedo.png" alt="">
+            <p>Brinquedos</p>
+          </li>
+          <li>
+            <img src="img/icon-livro.png" alt="">
+            <p>Livros Infantis</p>
+          </li>
+          <li>
+            <img src="img/icon-calçados.png" alt="">
+            <p>Calçados (Número 22)</p>
+          </li>
+          <li>
+            <img src="img/icon-roupa.png" alt="">
+            <p>Roupas (TM 2/3 anos)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="btn" onclick="goToPage('home')">Voltar para o Início</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
